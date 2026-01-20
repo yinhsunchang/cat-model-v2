@@ -16,31 +16,31 @@ All photos were captured and retouched by me, demonstrating both my photography 
 
 ## Website Sections
 
-### Navbar
+Navbar
 - Scroll-based appearance
 - Responsive hamburger menu (mobile & tablet)
 
-### Hero Section
+Hero Section
 - Parallax background
 - Title & subtitle overlay
 
-### About
+About
 - Personal introduction
 - Skill bars
 - Small statistics counters
 - Pricing / Services
 - Testimonials / Client feedback
 
-### Portfolio
+Portfolio
 - Responsive image wall
 - Click-to-open image modal
 - Original Cat Photography (All photos on this site were taken and retouched by me.)
 
-### Contact
+Contact
 - Contact information (address, phone, email)
 - Contact form with fake API call to simulate form submission
 
-### Footer
+Footer
 - Social media icons
 - Copyright information
 
@@ -48,22 +48,22 @@ All photos were captured and retouched by me, demonstrating both my photography 
 
 ## Features
 
-### Internationalization (i18n)
+Internationalization (i18n)
 - English / French bilingual support
 - Language switching without page reload
 - i18n applied to: UI text / Image alt text & captions / Modal content
 
-### SEO & Metadata
+SEO & Metadata
 - Dynamic document title
 - Dynamic meta tags for SEO
 - Managed with React Helmet
 
-### UX & Performance Enhancements
+UX & Performance Enhancements
 - Smooth scroll navigation for seamless in-page transitions
 - Lazy loading images for improved performance
 - Fully responsive design (mobile / tablet / desktop)
 
-### Advanced Portfolio Modal
+Advanced Portfolio Modal
 - Previous / Next arrows (desktop & mobile)
 - Swipe gestures (left / right)
 - Keyboard navigation: Left / Right arrow keys, ESC to close
