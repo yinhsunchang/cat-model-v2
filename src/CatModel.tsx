@@ -2,7 +2,6 @@ import './CatModel.css'
 
 import MyHelmet from "./components/Helmet.tsx";
 import Switcher from "./components/Switcher.tsx";
-import Sidebar from "./components/Sidebar.tsx";
 import Navbar from "./components/Navbar.tsx";
 import Header from "./components/Header.tsx";
 import About from "./components/About.tsx";
@@ -20,7 +19,6 @@ function CatModel() {
     <MyHelmet />
     <Switcher />
     <div className="black">
-    <Sidebar />
     <Navbar />
     {/* Page Content */}
     <div className="padding-large" id="main">

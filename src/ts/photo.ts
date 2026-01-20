@@ -10,18 +10,23 @@ import tunnel from '../assets/tunnel.jpg';
 import closeup from '../assets/closeup.jpg';
 import waiting from '../assets/waiting.jpg';
 
-const photo: string[] = [
-  reading,
-  walking,
-  tongue,
-  sink2,
-  sink1,
-  paw,
-  curious,
-  faucet,
-  tunnel,
-  closeup,
-  waiting
+export type Photo = {
+  src: string;
+  altKey: string;
+};
+
+const photo: Photo[] = [
+  { src: reading, altKey: "photo.reading" },
+  { src: walking, altKey: "photo.walking" },
+  { src: tongue, altKey: "photo.tongue" },
+  { src: sink2, altKey: "photo.sink2" },
+  { src: sink1, altKey: "photo.sink1" },
+  { src: paw, altKey: "photo.paw" },
+  { src: curious, altKey: "photo.curious" },
+  { src: faucet, altKey: "photo.faucet" },
+  { src: tunnel, altKey: "photo.tunnel" },
+  { src: closeup, altKey: "photo.closeup" },
+  { src: waiting, altKey: "photo.waiting" }
 ];
 
 

@@ -1,46 +1,113 @@
 body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
-/* For photos */
-.row-padding img {margin-bottom: 12px}
-
-/* Set the width of the sidebar to 120px */
-.sidebar {width: 120px;background-color: #222}
-
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
 
 mark{background:white;color:#000}
 
-.zoom:hover {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
-}
+.wide {letter-spacing: 10px;}
 
-.slideshow {
-  position: relative;
-  width: 992px;
-  aspect-ratio: 1280 / 853;
-  margin: auto;
-  overflow: hidden;
-}
+.hover-opacity {cursor: pointer;}
 
-.slide {
-  position: absolute;
-  inset: 0;
-  background-size: cover;
+/* Create a Parallax Effect */
+.bgimg-1 {
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0;
-  animation: fade 10s infinite;
+  background-size: cover;
 }
-@keyframes fade {
-  0%   { opacity: 0; }
-  10%  { opacity: 1; }
-  30%  { opacity: 1; }
-  40%  { opacity: 1; }
-  100% { opacity: 0; }
+
+/* First image (Full height) */
+.bgimg-1 {
+  height: 100dvh;
+  height: 100vh;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+/* For photos */
+.row-padding img {margin-bottom: 12px}
+
+/* Previous / Next arrows */
+.modal-content .button.left,
+.modal-content .button.right {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 8px 12px;
+  user-select: none;
+  z-index: 4;
+}
+
+.modal-content .button.left {
+  left: 16px;
+}
+
+.modal-content .button.right {
+  right: 16px;
+}
+
+.modal-content .button.left:hover,
+.modal-content .button.right:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Thumbnail strip */
+.thumb-strip {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 12px 0;
+  margin-top: 12px;
+  justify-content: center;
+}
+
+/* Hide scrollbar */
+.thumb-strip::-webkit-scrollbar {
+  display: none;
+}
+
+/* Single thumbnail */
+.thumb {
+  height: 60px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  cursor: pointer;
+  opacity: 0.6;
+  border-radius: 4px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+/* Hover */
+.thumb:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Active image highlighted */
+.thumb.active {
+  opacity: 1;
+  outline: 2px solid white;
+}
+
+/* Thumbnail for mobile */
+@media (max-width: 600px) {
+  .thumb {
+    height: 48px;
+  }
+  .thumb-strip {
+    justify-content: flex-start;
+    padding-left: 12px;
+  }
 }

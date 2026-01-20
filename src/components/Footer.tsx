@@ -5,7 +5,7 @@ const Footer = () => {
     <i className="fa fa-instagram hover-opacity"></i>
   </a>
   <p className="medium">Designed & Built by 
-    <a href="https://github.com/yinhsunchang" target="_blank" className="hover-text-white">Yin-Hsun Chang</a>
+    <a href="https://github.com/yinhsunchang" target="_blank" className="hover-text-white"> Yin-Hsun Chang</a>
   </p>
   </footer>
   );

@@ -3,10 +3,10 @@
   "pageDescription": "Un site portfolio élégant présentant des portraits de chats style modèle, construit avec React et TypeScript.",
   
   "nav": {
-    "home": "Accueil",
-    "about": "À Propos",
-    "photos": "Photos",
-    "contact": "Contact"
+    "home": "ACCUEIL",
+    "about": "À PROPOS",
+    "photos": "PORTFOLIO",
+    "contact": "CONTACT"
   },
 
   "header": {
@@ -16,29 +16,24 @@
   },
 
   "about": {
-
     "title": "À propos de moi",
-
     "texts": {
       "race": "Sibérien",
       "birthday": "1er avril 2022",
       "country": "France"
     },
-
     "skills": {
-      "title": "Mes compétences",
+      "title": "Mes Compétences",
       "sleep": "Sauter",
       "play": "Courir",
       "eat": "Manger"
     },
-
     "stats": {
       "partners": "Partenaires",
       "projects": "Projets Réalisés",
       "clients": "Clients Satisfaits",
       "meetings": "Réunions"
     },
-
     "price": {
       "title": "Mes Tarifs",
       "basic": "À l'intérieur",
@@ -46,9 +41,8 @@
       "time": "par heure",
       "sign": "S'inscrire"
     },
-
     "reputation": {
-      "title": "Ma réputation",
+      "title": "Ma Réputation",
       "temoin1": "Ephrem Matter",
       "job1": "Photographe",
       "text1": "C'est formidable de travailler avec Docteur.",
@@ -56,27 +50,35 @@
       "job2": "Photographe et Web Developer",
       "text2": "Personne n'est meilleur que Docteur."
     }
-    
   },
 
-  "photo": "Mes Photos",
+  "photo": {
+    "title": "Mes Photos",
+    "reading": "Je lis.",
+    "walking": "Je marche.",
+    "tongue": "Tu veux voir ma langue ?",
+    "sink2": "J'aime rester dans l'évier.",
+    "sink1": "J'aime rester dans l'évier.",
+    "paw": "Mes jolies pattes.",
+    "curious": "Parfois, je suis curieux.",
+    "faucet": "J'essaie d'ouvrir le robinet !",
+    "tunnel": "Dans mon tunnel préféré.",
+    "closeup": "J'ai de beaux yeux bleus.",
+    "waiting": "J'attends des surprises."
+  },
 
   "contact": {
-
     "title": "Me Contacter",
     "address": "Paris, FRANCE",
     "phone": "Téléphone : +33 6 25 31 97 92",
     "email": "Email: theodocteur2022@gmail.com",
     "sendMessage": "Envoyez-moi un message:",
-
     "placeholder": {
       "name": "Nom",
       "email": "Email",
       "subject": "Sujet",
       "message": "Message"
     },
-      
     "sendButton": " ENVOYER"
-    
   }
 }
