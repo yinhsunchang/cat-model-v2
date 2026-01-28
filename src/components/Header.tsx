@@ -7,8 +7,8 @@ const Header = () => {
   return (
   <header className="bgimg-1 display-container" style={{backgroundImage: `url(${front})`}} id="home">
     <div className="display-middle" style={{ whiteSpace: "nowrap" }}>
-    <span className="center wide animate-opacity">
-    <h1 className="jumbo"><mark className="hide-small">{t("header.greeting")}</mark> {t("header.name")}</h1>
+    <span className="center animate-opacity">
+    <h1 className="jumbo wide"><mark className="hide-small">{t("header.greeting")}</mark> {t("header.name")}</h1>
     <p className="xlarge">{t("header.subtitle")}</p>
     </span>
     </div>
