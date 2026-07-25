@@ -1,23 +1,23 @@
-import { useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { useTranslation } from "react-i18next";
-import '../i18n';
+import "../i18n/i18n";
 
 const MyHelmet = () => {
   const { t, i18n } = useTranslation();
-  
+
   useEffect(() => {
-    document.title = t('pageTitle');
+    document.title = t("pageTitle");
   }, [t, i18n.language]);
 
   return (
     <div>
       <Helmet>
-        <title>{t('pageTitle')}</title>
-        <meta name="description" content={t('pageDescription')} />
+        <title>{t("pageTitle")}</title>
+        <meta name="description" content={t("pageDescription")} />
       </Helmet>
     </div>
   );
-}
+};
 
-export default MyHelmet
+export default MyHelmet;
