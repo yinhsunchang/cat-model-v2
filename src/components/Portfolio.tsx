@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
-import photo from "../services/photo.ts";
+import photos from "../services/photos.ts";
 import Modal from "./Modal.tsx";
 
 const Portfolio = () => {
@@ -8,14 +8,14 @@ const Portfolio = () => {
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
 
   // put the images evenly into two columns
-  const half = Math.ceil(photo.length / 2);
-  const left = photo.slice(0, half);
-  const right = photo.slice(half);
+  const half = Math.ceil(photos.length / 2);
+  const left = photos.slice(0, half);
+  const right = photos.slice(half);
 
   return (
     <>
-      <div className="padding-64 content" id="photos">
-        <h2 className="text-light-grey">{t("photo.title")}</h2>
+      <div className="padding-64 content text-light-grey" id="photos">
+        <h2>{t("photo.title")}</h2>
         <hr style={{ width: "200px" }} className="opacity" />
 
         <div className="row-padding" style={{ margin: "0 -16px" }}>
@@ -56,7 +56,7 @@ const Portfolio = () => {
       {/* Modal */}
       {currentIndex !== null && (
         <Modal
-          photos={photo}
+          photos={photos}
           index={currentIndex}
           onClose={() => setCurrentIndex(null)}
           onChange={setCurrentIndex}
