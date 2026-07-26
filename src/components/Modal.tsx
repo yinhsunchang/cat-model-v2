@@ -20,7 +20,7 @@ const Modal = ({ photos, index, onClose, onChange }: ModalProps) => {
   /* Previous / Next arrows + ESC */
   const prev = () => onChange((index - 1 + photos.length) % photos.length);
   const next = () => onChange((index + 1) % photos.length);
-  
+
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
@@ -29,7 +29,7 @@ const Modal = ({ photos, index, onClose, onChange }: ModalProps) => {
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [index]);
+  }, [onClose, prev, next]);
 
   /* Swipe gestures */
   const onTouchStart = (e: React.TouchEvent) => {
@@ -56,12 +56,20 @@ const Modal = ({ photos, index, onClose, onChange }: ModalProps) => {
         <span className="button large black display-topright" onClick={onClose}>
           <i className="fa fa-remove"></i>
         </span>
-        
+
         {/* Previous / Next arrows */}
-        <span className="button left large black display-left" onClick={prev} style={{ cursor: "pointer" }}>
+        <span
+          className="button left large black display-left"
+          onClick={prev}
+          style={{ cursor: "pointer" }}
+        >
           &#10094;
         </span>
-        <span className="button right large black display-right" onClick={next} style={{ cursor: "pointer" }}>
+        <span
+          className="button right large black display-right"
+          onClick={next}
+          style={{ cursor: "pointer" }}
+        >
           &#10095;
         </span>
 
@@ -72,18 +80,18 @@ const Modal = ({ photos, index, onClose, onChange }: ModalProps) => {
         {/* Thumbnail strip */}
         <div className="thumb-strip" onClick={(e) => e.stopPropagation()}>
           {photos.map((p, i) => (
-            <img 
-            key={i} src={p.src} alt={t(p.altKey)}
-            className={`thumb ${i === index ? "active" : ""}`}
-            onClick={() => onChange(i)}
-          />
+            <img
+              key={i}
+              src={p.src}
+              alt={t(p.altKey)}
+              className={`thumb ${i === index ? "active" : ""}`}
+              onClick={() => onChange(i)}
+            />
           ))}
         </div>
-
       </div>
     </div>
   );
 };
 
-
-export default Modal
+export default Modal;
