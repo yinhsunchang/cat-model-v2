@@ -1,4 +1,4 @@
-import './CatModel.css'
+import "./CatModel.css";
 
 import MyHelmet from "./components/Helmet.tsx";
 import Switcher from "./components/Switcher.tsx";
@@ -9,29 +9,28 @@ import Portfolio from "./components/Portfolio.tsx";
 import Contact from "./components/Contact.tsx";
 import Footer from "./components/Footer.tsx";
 
-import { useSmoothScroll } from './ts/useSmoothScroll.ts';
+import { useSmoothScroll } from "./services/useSmoothScroll.ts";
 
 function CatModel() {
   useSmoothScroll(); // Enable smooth scrolling
 
   return (
     <>
-    <MyHelmet />
-    <Switcher />
-    <div className="black">
-    <Navbar />
-    {/* Page Content */}
-    <div className="padding-large" id="main">
-    <Header />
-    <About />
-    <Portfolio />
-    <Contact />
-    <Footer />
-    </div>
-    </div>
+      <MyHelmet />
+      <Switcher />
+      <div className="black">
+        <Navbar />
+        {/* Page Content */}
+        <div className="padding-large" id="main">
+          <Header />
+          <About />
+          <Portfolio />
+          <Contact />
+          <Footer />
+        </div>
+      </div>
     </>
   );
 }
-
 
 export default CatModel;
