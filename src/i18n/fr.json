@@ -1,7 +1,7 @@
 {
   "pageTitle": "Docteur – Portfolio de chat modèle",
   "pageDescription": "Un site portfolio élégant présentant des portraits de chats style modèle, construit avec React et TypeScript.",
-  
+
   "nav": {
     "home": "ACCUEIL",
     "about": "À PROPOS",
@@ -79,6 +79,8 @@
       "subject": "Sujet",
       "message": "Message"
     },
-    "sendButton": " ENVOYER"
+    "sendButton": " ENVOYER",
+    "success": "Message envoyé avec succès !",
+    "fail": "Échec de l'envoi du message. Veuillez réessayer."
   }
 }

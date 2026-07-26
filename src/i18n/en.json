@@ -79,6 +79,8 @@
       "subject": "Subject",
       "message": "Message"
     },
-    "sendButton": " SEND MESSAGE"
+    "sendButton": " SEND MESSAGE",
+    "success": "Message sent successfully!",
+    "fail": "Failed to send message. Please try again."
   }
 }
