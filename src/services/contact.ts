@@ -1,23 +1,10 @@
-export interface ContactFormData {
-  name: string;
-  email: string;
-  subject: string;
-  message: string;
-}
+import { supabase } from "../lib/supabase";
+import type { FormProps } from "../types/form";
 
-export interface ContactResponse {
-  status: 'success' | 'error';
-  message?: string;
-}
+export async function sendContactForm(form: FormProps): Promise<void> {
+  const { error } = await supabase.from("contacts").insert(form);
 
-export function sendContactForm(_formData: ContactFormData): Promise<ContactResponse> {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (Math.random() < 0.8) {
-        resolve({ status: 'success' });
-      } else {
-        reject({ status: 'error', message: 'Send failed' });
-      }
-    }, 1000 + Math.random() * 1000);
-  });
+  if (error) {
+    throw error;
+  }
 }
