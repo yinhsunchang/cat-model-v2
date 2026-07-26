@@ -1,13 +1,14 @@
-import CatModel from './CatModel.tsx'
+import { HelmetProvider } from "react-helmet-async";
+import CatModel from "./CatModel.tsx";
 
 function App() {
-
   return (
     <>
-    <CatModel />
+      <HelmetProvider>
+        <CatModel />
+      </HelmetProvider>
     </>
-  )
+  );
 }
 
-export default App
-
+export default App;
