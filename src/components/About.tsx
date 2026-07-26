@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import SkillBar from "./SkillBar.tsx";
 import ephrem from "../assets/ephrem255.jpg";
 import yinhsun from "../assets/yinhsun255.jpg";
 
@@ -17,30 +18,10 @@ const About = () => {
       <p>{t("about.texts.country")}</p>
 
       <h3 className="padding-16 text-light-grey">{t("about.skills.title")}</h3>
-      <p className="wide">{t("about.skills.sleep")}</p>
-      <div className="white">
-        <div
-          className="dark-grey"
-          style={{ height: "28px", width: "95%" }}
-        ></div>
-      </div>
-      <p className="wide">{t("about.skills.play")}</p>
-      <div className="white">
-        <div
-          className="dark-grey"
-          style={{ height: "28px", width: "85%" }}
-        ></div>
-      </div>
-      <p className="wide">{t("about.skills.eat")}</p>
-      <div className="white">
-        <div
-          className="dark-grey"
-          style={{ height: "28px", width: "80%" }}
-        ></div>
-      </div>
-
+      <SkillBar label={t("about.skills.sleep")} percentage={95} />
+      <SkillBar label={t("about.skills.play")} percentage={85} />
+      <SkillBar label={t("about.skills.eat")} percentage={80} />
       <br />
-
       <div className="row center padding-16 section light-grey">
         <div className="quarter section">
           <span className="xlarge">8+</span>
