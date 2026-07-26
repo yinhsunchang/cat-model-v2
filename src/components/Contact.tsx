@@ -49,8 +49,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="padding-64 content text-grey" id="contact">
-      <h2 className="text-light-grey">{t("contact.title")}</h2>
+    <div className="padding-64 content text-light-grey" id="contact">
+      <h2>{t("contact.title")}</h2>
       <hr style={{ width: "200px" }} className="opacity" />
 
       <div className="section">
