@@ -24,12 +24,13 @@ const Modal = ({ photos, index, onClose, onChange }: ModalProps) => {
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === "Escape") onClose();
-      if (e.key === "ArrowLeft") prev();
-      if (e.key === "ArrowRight") next();
+      if (e.key === "ArrowLeft")
+        onChange((index - 1 + photos.length) % photos.length);
+      if (e.key === "ArrowRight") onChange((index + 1) % photos.length);
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
-  }, [onClose, prev, next]);
+  }, [index, photos.length, onClose, onChange]);
 
   /* Swipe gestures */
   const onTouchStart = (e: React.TouchEvent) => {
