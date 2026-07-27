@@ -45,7 +45,7 @@
       "title": "Réservation",
       "notice": "Je reviendrai vers vous dans un délai de 24 heures !",
       "name": "Nom",
-      "send": "ENVOYER",
+      "send": " ENVOYER",
       "success": "Réservation soumise avec succès !",
       "error": "La réservation n'a pas pu être soumise. Veuillez réessayer."
     },
