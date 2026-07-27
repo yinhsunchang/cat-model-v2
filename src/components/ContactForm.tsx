@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { sendContactForm } from "../services/contact";
-import type { FormProps } from "../types/form";
+import type { FormProps } from "../types/contact";
 
 interface StatusProps {
   success: boolean;
