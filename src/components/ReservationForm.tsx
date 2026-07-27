@@ -3,11 +3,7 @@ import { sendReservationForm } from "../services/reservation";
 import type { FormProps } from "../types/reservation";
 import { useTranslation } from "react-i18next";
 
-interface SuccessProps {
-  onSuccess: () => void;
-}
-
-const ReservationForm = ({ onSuccess }: SuccessProps) => {
+const ReservationForm = () => {
   const { t } = useTranslation();
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState<string | null>(null);
@@ -32,7 +28,6 @@ const ReservationForm = ({ onSuccess }: SuccessProps) => {
       await sendReservationForm(form);
       setSuccess(t("about.reserve.success"));
       setForm({ name: "", email: "", date: "", message: "" });
-      setTimeout(onSuccess, 1500);
     } catch (err) {
       console.error(err);
       setError(t("about.reserve.error"));
@@ -49,6 +44,7 @@ const ReservationForm = ({ onSuccess }: SuccessProps) => {
             className="input padding-16 border"
             type="text"
             name="name"
+            aria-label="name"
             value={form.name}
             placeholder={t("about.reserve.name")}
             onChange={handleChange}
@@ -62,6 +58,7 @@ const ReservationForm = ({ onSuccess }: SuccessProps) => {
             className="input padding-16 border"
             type="email"
             name="email"
+            aria-label="email"
             value={form.email}
             placeholder="Email"
             onChange={handleChange}
@@ -75,6 +72,7 @@ const ReservationForm = ({ onSuccess }: SuccessProps) => {
             className="input padding-16 border"
             type="datetime-local"
             name="date"
+            aria-label="date"
             value={form.date}
             onChange={handleChange}
             disabled={loading}
@@ -87,6 +85,7 @@ const ReservationForm = ({ onSuccess }: SuccessProps) => {
             className="input padding-16 border"
             type="text"
             name="message"
+            aria-label="message"
             value={form.message}
             placeholder="Message"
             onChange={handleChange}
@@ -104,8 +103,8 @@ const ReservationForm = ({ onSuccess }: SuccessProps) => {
             type="submit"
             disabled={loading}
           >
-            <i className="fa fa-paper-plane"></i> {t("about.reserve.send")}
-            {loading ? "Sending..." : null}
+            <i className="fa fa-paper-plane" aria-hidden="true"></i>
+            {loading ? "Sending..." : t("about.reserve.send")}
           </button>
         </p>
       </form>
