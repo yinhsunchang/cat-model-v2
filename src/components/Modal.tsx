@@ -10,8 +10,14 @@ export default function Modal({ open, onClose, children }: ModalProps) {
   if (!open) return null;
 
   return createPortal(
-    <div className="modal dark-grey padding" onClick={onClose}>
+    <div
+      data-testid="modal-backdrop"
+      className="modal dark-grey padding"
+      onClick={onClose}
+    >
       <div
+        role="dialog"
+        aria-modal="true"
         className="modal-content animate-zoom mobile"
         onClick={(e) => e.stopPropagation()}
       >
