@@ -19,19 +19,20 @@ const Reservation = () => {
 
       <Modal open={open} onClose={() => setOpen(false)}>
         <div className="container black">
-          <span
+          <button
+            type="button"
+            aria-label="Close reservation"
             className="button display-topright large"
             onClick={() => setOpen(false)}
-            style={{ cursor: "pointer" }}
           >
-            <i className="fa fa-times xlarge"></i>
-          </span>
+            <i className="fa fa-times xlarge" aria-hidden="true" />
+          </button>
           <h1>{t("about.reserve.title")}</h1>
         </div>
 
         <div className="container">
           <p className="padding light-grey">{t("about.reserve.notice")}</p>
-          <ReservationForm onSuccess={() => setOpen(false)} />
+          <ReservationForm />
         </div>
       </Modal>
     </>
