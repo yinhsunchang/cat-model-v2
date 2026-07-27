@@ -51,12 +51,15 @@
     },
     "reputation": {
       "title": "Ma Réputation",
-      "temoin1": "Ephrem Matter",
+      "testimonial1": "Alexis",
       "job1": "Photographe",
-      "text1": "C'est formidable de travailler avec Docteur.",
-      "temoin2": "Yin-Hsun Chang",
-      "job2": "Photographe et Web Developer",
-      "text2": "Personne n'est meilleur que Docteur."
+      "text1": "C'est formidable de travailler avec Docteur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "testimonial2": "Ephrem",
+      "job2": "Photographe",
+      "text2": "Personne n'est meilleur que Docteur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "testimonial3": "Yin-Hsun",
+      "job3": "Web Developer",
+      "text3": "Docteur est tout simplement génial. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     }
   },
 
