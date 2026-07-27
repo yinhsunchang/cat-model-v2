@@ -36,10 +36,18 @@
     },
     "price": {
       "title": "My Price",
-      "basic": "Indoors",
-      "pro": "Outdoors",
-      "time": "per hour",
-      "sign": "Sign Up"
+      "plan1": "Indoors",
+      "plan2": "Outdoors",
+      "unit": "per hour",
+      "reserve": "Reserve"
+    },
+    "reserve": {
+      "title": "Reservation",
+      "notice": "I will get back to you within 24 hours!",
+      "name": "Name",
+      "send": "SEND",
+      "success": "Reservation submitted successfully!",
+      "error": "Failed to submit reservation. Please try again."
     },
     "reputation": {
       "title": "My Reputation",

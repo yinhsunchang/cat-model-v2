@@ -36,10 +36,18 @@
     },
     "price": {
       "title": "Mes Tarifs",
-      "basic": "À l'intérieur",
-      "pro": "À l'extérieur",
-      "time": "par heure",
-      "sign": "S'inscrire"
+      "plan1": "À l'intérieur",
+      "plan2": "À l'extérieur",
+      "unit": "par heure",
+      "reserve": "Réserver"
+    },
+    "reserve": {
+      "title": "Réservation",
+      "notice": "Je reviendrai vers vous dans un délai de 24 heures !",
+      "name": "Nom",
+      "send": "ENVOYER",
+      "success": "Réservation soumise avec succès !",
+      "error": "La réservation n'a pas pu être soumise. Veuillez réessayer."
     },
     "reputation": {
       "title": "Ma Réputation",
