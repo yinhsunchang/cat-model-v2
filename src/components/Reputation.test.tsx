@@ -1,5 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Reputation from "./Reputation";
+import type { PropsWithChildren } from "react";
 
 vi.mock("react-i18next", () => ({
   useTranslation: () => ({
@@ -8,8 +9,10 @@ vi.mock("react-i18next", () => ({
 }));
 
 vi.mock("swiper/react", () => ({
-  Swiper: ({ children }: any) => <div data-testid="swiper">{children}</div>,
-  SwiperSlide: ({ children }: any) => (
+  Swiper: ({ children }: PropsWithChildren) => (
+    <div data-testid="swiper">{children}</div>
+  ),
+  SwiperSlide: ({ children }: PropsWithChildren) => (
     <div data-testid="swiper-slide">{children}</div>
   ),
 }));
