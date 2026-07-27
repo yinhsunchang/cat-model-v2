@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import photos from "../services/photos.ts";
-import Modal from "./Modal.tsx";
+import Modal from "./ModalPhoto.tsx";
 
 const Portfolio = () => {
   const { t } = useTranslation();
