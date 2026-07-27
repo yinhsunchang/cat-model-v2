@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import SkillBar from "./SkillBar.tsx";
 import StatCard from "./StatCard.tsx";
+import PriceCard from "./PriceCard.tsx";
 import ephrem from "../assets/ephrem255.jpg";
 import yinhsun from "../assets/yinhsun255.jpg";
 
@@ -24,33 +25,7 @@ const About = () => {
       <SkillBar label={t("about.skills.eat")} percentage={80} />
       <br />
       <StatCard />
-
-      <h3 className="padding-16 text-light-grey">{t("about.price.title")}</h3>
-      <div className="row-padding" style={{ margin: "0 -16px" }}>
-        <div className="half margin-bottom">
-          <ul className="ul white center opacity hover-opacity-off">
-            <li className="dark-grey xlarge padding-32">
-              {t("about.price.basic")}
-            </li>
-            <li className="padding-16">
-              <h2>$ 20</h2>
-              <span className="opacity">{t("about.price.time")}</span>
-            </li>
-          </ul>
-        </div>
-
-        <div className="half">
-          <ul className="ul white center opacity hover-opacity-off">
-            <li className="dark-grey xlarge padding-32">
-              {t("about.price.pro")}
-            </li>
-            <li className="padding-16">
-              <h2>$ 30</h2>
-              <span className="opacity">{t("about.price.time")}</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <PriceCard />
 
       <h3 className="padding-24 text-light-grey">
         {t("about.reputation.title")}
