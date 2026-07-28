@@ -1,15 +1,31 @@
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
 
-body, html {
+body,
+html {
   height: 100%;
   line-height: 1.8;
 }
 
-mark{background:white;color:#000}
+mark {
+  background: white;
+  color: #000;
+}
 
-.wide {letter-spacing: 10px;}
+.wide {
+  letter-spacing: 10px;
+}
 
-.hover-opacity {cursor: pointer;}
+.hover-opacity {
+  cursor: pointer;
+}
 
 /* Create a Parallax Effect */
 .bgimg-1 {
@@ -34,7 +50,9 @@ mark{background:white;color:#000}
 }
 
 /* For photos */
-.row-padding img {margin-bottom: 12px}
+.row-padding img {
+  margin-bottom: 12px;
+}
 
 /* Previous / Next arrows */
 .modal-content .button.left,
@@ -70,7 +88,7 @@ mark{background:white;color:#000}
   overflow-x: auto;
   padding: 12px 0;
   margin-top: 12px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 /* Hide scrollbar */
@@ -110,4 +128,21 @@ mark{background:white;color:#000}
     justify-content: flex-start;
     padding-left: 12px;
   }
+}
+
+/* swiper */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-family: swiper-icons !important;
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: white !important;
+}
+
+.swiper-pagination-bullet {
+  background: white !important;
 }
