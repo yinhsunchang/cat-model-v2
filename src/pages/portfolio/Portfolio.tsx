@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Reveal from "./Reveal.tsx";
-import photos from "../services/photos.ts";
+import photos from "../../services/photos.ts";
 import ModalPhoto from "./ModalPhoto.tsx";
 
 const Portfolio = () => {
