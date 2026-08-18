@@ -1,9 +1,9 @@
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import ReservationForm from "./ReservationForm";
-import { sendReservationForm } from "../services/reservation";
+import { sendReservationForm } from "../../services/reservation";
 
-vi.mock("../services/reservation", () => ({
+vi.mock("../../services/reservation", () => ({
   sendReservationForm: vi.fn(),
 }));
 

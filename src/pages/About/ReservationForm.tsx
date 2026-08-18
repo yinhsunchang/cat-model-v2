@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { sendReservationForm } from "../services/reservation";
-import type { FormProps } from "../types/reservation";
+import { sendReservationForm } from "../../services/reservation";
+import type { FormProps } from "../../types/reservation";
 import { useTranslation } from "react-i18next";
 
 const ReservationForm = () => {

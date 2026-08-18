@@ -3,12 +3,11 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "../CatModel.css";
 import { useTranslation } from "react-i18next";
 
-import alexis from "../assets/alexis255.jpg";
-import ephrem from "../assets/ephrem255.jpg";
-import yinhsun from "../assets/yinhsun255.jpg";
+import alexis from "../../assets/alexis255.jpg";
+import ephrem from "../../assets/ephrem255.jpg";
+import yinhsun from "../../assets/yinhsun255.jpg";
 
 interface CardProps {
   image: string;
