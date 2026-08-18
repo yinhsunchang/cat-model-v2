@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ScrollToTop } from "./ScrollToTop.ts";
 import LayoutMain from "../layouts/LayoutMain.tsx";
-import PageAbout from "../pages/About/PageAbout.tsx";
-import PagePortfolio from "../pages/Portfolio/PagePortfolio.tsx";
-import PageContact from "../pages/Contact/PageContact.tsx";
+import PageAbout from "../pages/about/PageAbout.tsx";
+import PagePortfolio from "../pages/portfolio/PagePortfolio.tsx";
+import PageContact from "../pages/contact/PageContact.tsx";
 
 const CatModel = () => {
   return (
