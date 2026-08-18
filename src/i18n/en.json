@@ -5,14 +5,26 @@
   "nav": {
     "home": "HOME",
     "about": "ABOUT",
-    "photos": "PORTFOLIO",
-    "contact": "CONTACT"
+    "portfolio": "PORTFOLIO",
+    "box": "BOX",
+    "encyclopedia": "Encyclopedia",
+    "films": "Films",
+    "shop": "SHOP",
+    "contact": "CONTACT",
+    "signin": "SIGN IN",
+    "dashboard": "DASHBOARD",
+    "subscribers": "SUBSCRIBERS",
+    "reservations": "RESERVATIONS",
+    "messages": "MESSAGES",
+    "todos": "TODOS",
+    "languages": "LANGUAGES"
   },
 
   "header": {
     "greeting": "I'm",
     "name": "Doctor",
-    "subtitle": "A super model."
+    "subtitle": "A super model.",
+    "box": "A little box filled with things I like..."
   },
 
   "about": {
@@ -78,6 +90,25 @@
     "waiting": "I am waiting for surprises."
   },
 
+  "fact": {
+    "title": "Cats & Facts",
+    "loading": "Loading...",
+    "next": "Next",
+    "errors": {
+      "fetchError": "Unable to load cat fact.",
+      "unknownError": "An unexpected error occurred."
+    }
+  },
+
+  "films": {
+    "title": "My Movie List",
+    "add": "Add",
+    "placeholder": "Add a film...",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete"
+  },
+
   "contact": {
     "title": "Contact Me",
     "address": "Paris, FRANCE",
@@ -90,8 +121,99 @@
       "subject": "Subject",
       "message": "Message"
     },
-    "sendButton": " SEND MESSAGE",
+    "sendButton": " SEND",
     "success": "Message sent successfully!",
     "fail": "Failed to send message. Please try again."
+  },
+
+  "signup": {
+    "title": "Create a new account",
+    "signup": "Sign up",
+    "loading": "Creating account...",
+    "already": "Already have an account?",
+    "signin": "Sign in",
+    "required": "Please enter your email and password.",
+    "success": "Registration successful. Please check your email.",
+    "email": "Email",
+    "emailPlaceholder": "Email address",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password"
+  },
+
+  "signin": {
+    "title": "Sign in to your account",
+    "signin": "Sign in",
+    "loading": "Signing in...",
+    "notyet": "Don’t have an account yet?",
+    "signup": "Sign up",
+    "required": "Please enter your email and password.",
+    "email": "Email",
+    "emailPlaceholder": "Email address",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password"
+  },
+
+  "loading": "Loading...",
+
+  "protectedRoute": {
+    "loading": "Checking authentication..."
+  },
+
+  "dashboard": {
+    "title": "Dashboard",
+    "profile": "Profile",
+    "signout": "Sign out",
+    "signingout": "Signing out...",
+    "signoutError": "Unable to sign out. Please try again."
+  },
+
+  "subscribers": {
+    "title": "Subscribers",
+    "edit": "Edit",
+    "save": "Save",
+    "delete": "Delete",
+    "add": "Add",
+    "addFailed": "Add failed",
+    "placeholder": "Add a subscriber...",
+    "empty": "No subscribers"
+  },
+
+  "reservations": {
+    "title": "Reservations",
+    "delete": "Delete",
+    "deleting": "Deleting",
+    "deleteFailed": "Delete failed",
+    "empty": "No reservations"
+  },
+
+  "messages": {
+    "title": "Messages",
+    "delete": "Delete",
+    "deleting": "Deleting",
+    "deleteFailed": "Delete failed",
+    "empty": "No messages"
+  },
+
+  "todos": {
+    "title": "My Todo List",
+    "updateFailed": "Update failed",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "editPrompt": "Enter new text",
+    "editFailed": "Edit failed",
+    "save": "Save",
+    "saving": "Saving",
+    "delete": "Delete",
+    "deleting": "Deleting",
+    "deleteFailed": "Delete failed",
+    "add": "Add",
+    "adding": "Adding",
+    "addFailed": "Add failed",
+    "placeholder": "Add a todo...",
+    "empty": "No todos"
+  },
+
+  "confirm": {
+    "delete": "Are you sure to delete?"
   }
 }

@@ -5,14 +5,26 @@
   "nav": {
     "home": "ACCUEIL",
     "about": "À PROPOS",
-    "photos": "PORTFOLIO",
-    "contact": "CONTACT"
+    "portfolio": "PORTFOLIO",
+    "box": "CARTON",
+    "encyclopedia": "Encyclopédie",
+    "films": "Films",
+    "shop": "BOUTIQUE",
+    "contact": "CONTACT",
+    "signin": "SE CONNECTER",
+    "dashboard": "DASHBOARD",
+    "subscribers": "ABONNÉES",
+    "reservations": "RÉSERVATIONS",
+    "messages": "MESSAGES",
+    "todos": "TODOS",
+    "languages": "LANGUES"
   },
 
   "header": {
     "greeting": "Je suis",
     "name": "Docteur",
-    "subtitle": "Un super mannequin."
+    "subtitle": "Un super mannequin.",
+    "box": "Un petit carton remplie de choses que j'aime..."
   },
 
   "about": {
@@ -59,7 +71,7 @@
       "text2": "Personne n'est meilleur que Docteur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "testimonial3": "Yin-Hsun",
       "job3": "Web Developer",
-      "text3": "Docteur est tout simplement génial. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      "text3": "Docteur est tout simplement génial. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua magna."
     }
   },
 
@@ -78,6 +90,25 @@
     "waiting": "J'attends des surprises."
   },
 
+  "fact": {
+    "title": "Chats & Faits",
+    "loading": "Chargement...",
+    "next": "Suivant",
+    "errors": {
+      "fetchError": "Impossible de charger un fait sur les chats.",
+      "unknownError": "Une erreur inattendue s'est produite."
+    }
+  },
+
+  "films": {
+    "title": "Ma liste de films",
+    "add": "Ajouter",
+    "placeholder": "Ajouter un film....",
+    "save": "Sauvegarder",
+    "edit": "Modifier",
+    "delete": "Supprimer"
+  },
+
   "contact": {
     "title": "Me Contacter",
     "address": "Paris, FRANCE",
@@ -93,5 +124,96 @@
     "sendButton": " ENVOYER",
     "success": "Message envoyé avec succès !",
     "fail": "Échec de l'envoi du message. Veuillez réessayer."
+  },
+
+  "signup": {
+    "title": "Créer un nouveau compte",
+    "signup": "S'inscrire",
+    "loading": "Création du compte...",
+    "already": "Vous avez déjà un compte ?",
+    "signin": "Se connecter",
+    "required": "Veuillez saisir votre adresse e-mail et votre mot de passe.",
+    "success": "Inscription réussie. Veuillez consulter votre e-mail.",
+    "email": "Email",
+    "emailPlaceholder": "Adresse e-mail",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "Saisissez votre mot de passe"
+  },
+
+  "signin": {
+    "title": "Connectez-vous à votre compte",
+    "signin": "Se connecter",
+    "loading": "Connexion en cours...",
+    "notyet": "Vous n'avez pas encore de compte ?",
+    "signup": "S'inscrire",
+    "required": "Veuillez saisir votre adresse e-mail et votre mot de passe.",
+    "email": "Email",
+    "emailPlaceholder": "Adresse e-mail",
+    "password": "Mot de passe",
+    "passwordPlaceholder": "Saisissez votre mot de passe"
+  },
+
+  "loading": "Chargement...",
+
+  "protectedRoute": {
+    "loading": "Vérification de l'authentification..."
+  },
+
+  "dashboard": {
+    "title": "Tableau de bord",
+    "profile": "Profil",
+    "signout": "Se déconnecter",
+    "signingout": "Déconnexion en cours...",
+    "signoutError": "Impossible de se déconnecter. Veuillez réessayer."
+  },
+
+  "subscribers": {
+    "title": "Abonnés",
+    "edit": "Modifier",
+    "save": "Sauvegarder",
+    "delete": "Supprimer",
+    "add": "Ajouter",
+    "addFailed": "Échec de l'ajout",
+    "placeholder": "Ajouter un abonné...",
+    "empty": "Aucun abonné"
+  },
+
+  "reservations": {
+    "title": "Réservations",
+    "delete": "Supprimer",
+    "deleting": "Suppression en cours",
+    "deleteFailed": "Échec de la suppression",
+    "empty": "Aucune réservation"
+  },
+
+  "messages": {
+    "title": "Messages",
+    "delete": "Supprimer",
+    "deleting": "Suppression en cours",
+    "deleteFailed": "Échec de la suppression",
+    "empty": "Aucun message"
+  },
+
+  "todos": {
+    "title": "Ma liste de tâches",
+    "updateFailed": "Échec de la mise à jour",
+    "edit": "Modifier",
+    "cancel": "Annuler",
+    "editPrompt": "Entrez le nouveau texte",
+    "editFailed": "Échec de la modification",
+    "save": "Sauvegarder",
+    "saving": "Enregistrement",
+    "delete": "Supprimer",
+    "deleting": "Suppression en cours",
+    "deleteFailed": "Échec de la suppression",
+    "add": "Ajouter",
+    "adding": "Ajout en cours",
+    "addFailed": "Échec de l'ajout",
+    "placeholder": "Ajouter une tâche...",
+    "empty": "Aucune tâche"
+  },
+
+  "confirm": {
+    "delete": "Êtes-vous sûr de supprimer ?"
   }
 }
