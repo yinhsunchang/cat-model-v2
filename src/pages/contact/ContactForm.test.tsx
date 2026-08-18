@@ -1,7 +1,7 @@
 import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import ContactForm from "./ContactForm";
-import { sendContactForm } from "../services/contact";
+import { sendContactForm } from "../../services/contact";
 
 // Mock i18n
 vi.mock("react-i18next", () => ({
@@ -11,7 +11,7 @@ vi.mock("react-i18next", () => ({
 }));
 
 // Mock API
-vi.mock("../services/contact", () => ({
+vi.mock("../../services/contact", () => ({
   sendContactForm: vi.fn(),
 }));
 
