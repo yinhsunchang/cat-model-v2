@@ -117,7 +117,8 @@
     "placeholder": "Add a film...",
     "save": "Save",
     "edit": "Edit",
-    "delete": "Delete"
+    "delete": "Delete",
+    "empty": "No films"
   },
 
   "contact": {
