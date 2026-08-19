@@ -33,7 +33,9 @@
     "greeting": "I'm",
     "name": "Doctor",
     "subtitle": "A super model.",
-    "box": "A little box filled with things I like..."
+    "portfolio": "A little collection of me...",
+    "box": "A little box filled with things I like...",
+    "contact": "Let's get in touch..."
   },
 
   "about": {

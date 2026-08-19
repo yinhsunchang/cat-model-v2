@@ -33,7 +33,9 @@
     "greeting": "Je suis",
     "name": "Docteur",
     "subtitle": "Un super mannequin.",
-    "box": "Un petit carton remplie de choses que j'aime..."
+    "portfolio": "Une petite collection de moi...",
+    "box": "Un petit carton rempli de choses que j'aime...",
+    "contact": "Entrons en contact..."
   },
 
   "about": {
