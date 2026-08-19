@@ -1,8 +1,8 @@
-// import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import paw from "../../assets/paw.jpg";
 
 const HeaderContact = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <header
@@ -10,7 +10,9 @@ const HeaderContact = () => {
       style={{ backgroundImage: `url(${paw})` }}
     >
       <div className="display-middle">
-        <span className="xxlarge text-white wide">CONTACT</span>
+        <span className="xxlarge wide light-grey text-dark-grey animate-fading">
+          {t("header.contact")}
+        </span>
       </div>
     </header>
   );

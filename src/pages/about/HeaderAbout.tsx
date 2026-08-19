@@ -12,8 +12,8 @@ const HeaderAbout = () => {
       <div className="display-middle" style={{ whiteSpace: "nowrap" }}>
         <span className="center animate-opacity">
           <h1 className="jumbo wide">
-            <mark className="hide-small">{t("header.greeting")}</mark>{" "}
-            {t("header.name")}
+            <span className="hide-small">{t("header.greeting")}</span>{" "}
+            <mark>{t("header.name")}</mark>
           </h1>
           <p className="xlarge">{t("header.subtitle")}</p>
         </span>

@@ -1,8 +1,8 @@
+import { useTranslation } from "react-i18next";
 import sink2 from "../../assets/sink2.jpg";
-// import { useTranslation } from "react-i18next";
 
 const HeaderPortfolio = () => {
-  // const { t } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <header
@@ -10,7 +10,9 @@ const HeaderPortfolio = () => {
       style={{ backgroundImage: `url(${sink2})` }}
     >
       <div className="display-middle">
-        <span className="xxlarge text-white wide">PORTFOLIO</span>
+        <span className="xxlarge wide light-grey text-dark-grey animate-fading">
+          {t("header.portfolio")}
+        </span>
       </div>
     </header>
   );
