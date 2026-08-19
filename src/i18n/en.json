@@ -20,6 +20,15 @@
     "languages": "LANGUAGES"
   },
 
+  "404": {
+    "title1": "Oops!",
+    "title2": "Error 404 - Page Not Found",
+    "p1": "Sorry!",
+    "p2": "We can't seem to find the resource you're looking for.",
+    "p3": "Please check that the Web site address is spelled correctly.",
+    "p4": "Or use the menus to navigate to a specific section."
+  },
+
   "header": {
     "greeting": "I'm",
     "name": "Doctor",

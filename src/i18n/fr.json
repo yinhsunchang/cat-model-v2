@@ -20,6 +20,15 @@
     "languages": "LANGUES"
   },
 
+  "404": {
+    "title1": "Oups !",
+    "title2": "Erreur 404 - Page introuvable",
+    "p1": "Désolée !",
+    "p2": "Nous ne parvenons pas à trouver la ressource que vous recherchez.",
+    "p3": "Veuillez vérifier l'adresse du site Web.",
+    "p4": "Ou utilisez les menus pour accéder à une section spécifique."
+  },
+
   "header": {
     "greeting": "Je suis",
     "name": "Docteur",
