@@ -4,7 +4,7 @@ import LayoutMain from "../layouts/LayoutMain.tsx";
 import PageAbout from "../pages/about/PageAbout.tsx";
 import PagePortfolio from "../pages/portfolio/PagePortfolio.tsx";
 import PageContact from "../pages/contact/PageContact.tsx";
-
+import Page404 from "../pages/404/Page404.tsx";
 const CatModel = () => {
   return (
     <>
@@ -16,6 +16,7 @@ const CatModel = () => {
             <Route path="/portfolio" element={<PagePortfolio />} />
             <Route path="/contact" element={<PageContact />} />
           </Route>
+          <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
     </>
