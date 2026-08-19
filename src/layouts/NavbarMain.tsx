@@ -73,6 +73,14 @@ const Navbar = () => {
           </a>
 
           <NavLink
+            to="/box"
+            className="bar-item button hide-small right"
+            style={navLinkStyles}
+          >
+            <i className="fa fa-archive"></i> {t("nav.box")}
+          </NavLink>
+
+          <NavLink
             to="/portfolio"
             className="bar-item button hide-small right"
             style={navLinkStyles}
@@ -90,6 +98,15 @@ const Navbar = () => {
               onClick={() => setShowMenu(false)}
             >
               {t("nav.portfolio")}
+            </NavLink>
+
+            <NavLink
+              to="/box"
+              className="bar-item button"
+              style={navLinkStyles}
+              onClick={() => setShowMenu(false)}
+            >
+              {t("nav.box")}
             </NavLink>
 
             <a
