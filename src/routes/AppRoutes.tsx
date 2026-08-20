@@ -7,8 +7,19 @@ import PageBox from "../pages/box/PageBox.tsx";
 import Encyclopedia from "../pages/box/Encyclopedia.tsx";
 import Films from "../pages/box/Films.tsx";
 import PageContact from "../pages/contact/PageContact.tsx";
+import PageSignup from "../pages/signup/PageSignup.tsx";
+import PageSignin from "../pages/signin/PageSignin.tsx";
+import GuestRoute from "./GuestRoute.tsx";
+import ProtectedRoute from "./ProtectedRoute.tsx";
+import LayoutAdmin from "../layouts/LayoutAdmin.tsx";
+import PageDashboard from "../pages/dashboard/PageDashboard.tsx";
+import PageSubscribers from "../pages/subscribers/PageSubscribers.tsx";
+import PageMessages from "../pages/messages/PageMessages.tsx";
+import PageReservations from "../pages/reservations/PageReservations.tsx";
+import PageTodos from "../pages/todos/PageTodos.tsx";
 import Page404 from "../pages/404/Page404.tsx";
-const CatModel = () => {
+
+const AppRoutes = () => {
   return (
     <>
       <BrowserRouter basename={import.meta.env.BASE_URL}>
@@ -24,6 +35,67 @@ const CatModel = () => {
             </Route>
             <Route path="/contact" element={<PageContact />} />
           </Route>
+
+          <Route
+            path="/signup"
+            element={
+              <GuestRoute>
+                <PageSignup />
+              </GuestRoute>
+            }
+          />
+          <Route
+            path="/signin"
+            element={
+              <GuestRoute>
+                <PageSignin />
+              </GuestRoute>
+            }
+          />
+
+          <Route element={<LayoutAdmin />}>
+            <Route
+              path="/dashboard"
+              element={
+                <ProtectedRoute>
+                  <PageDashboard />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/subscribers"
+              element={
+                <ProtectedRoute>
+                  <PageSubscribers />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/messages"
+              element={
+                <ProtectedRoute>
+                  <PageMessages />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/reservations"
+              element={
+                <ProtectedRoute>
+                  <PageReservations />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/todos"
+              element={
+                <ProtectedRoute>
+                  <PageTodos />
+                </ProtectedRoute>
+              }
+            />
+          </Route>
+
           <Route path="*" element={<Page404 />} />
         </Routes>
       </BrowserRouter>
@@ -31,4 +103,4 @@ const CatModel = () => {
   );
 };
 
-export default CatModel;
+export default AppRoutes;
