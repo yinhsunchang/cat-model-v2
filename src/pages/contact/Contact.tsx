@@ -10,17 +10,15 @@ const Contact = () => {
       <hr style={{ width: "200px" }} className="opacity" />
       <div className="section">
         <p>
-          <i className="fa fa-map-marker fa-fw text-white xlarge margin-right"></i>{" "}
+          <i className="fa fa-map-marker fa-fw text-white large margin-right"></i>
           {t("contact.address")}
         </p>
         <p>
-          <i className="fa fa-phone fa-fw text-white xlarge margin-right"></i>{" "}
+          <i className="fa fa-phone fa-fw text-white large margin-right"></i>
           {t("contact.phone")}
         </p>
         <p>
-          <i className="fa fa-envelope fa-fw text-white xlarge margin-right">
-            {" "}
-          </i>{" "}
+          <i className="fa fa-envelope fa-fw text-white large margin-right"></i>
           {t("contact.email")}
         </p>
       </div>
