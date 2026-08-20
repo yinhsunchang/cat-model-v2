@@ -74,7 +74,7 @@ export default function TodoItem({ todo }: Props) {
               className="button block grey large"
               onClick={handleSaveEdit}
             >
-              <i className="fa fa-save xlarge"></i> {t("films.save")}
+              <i className="fa fa-save large"></i> {t("films.save")}
             </button>
           </>
         ) : (
