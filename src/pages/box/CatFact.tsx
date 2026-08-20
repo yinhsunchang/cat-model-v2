@@ -56,7 +56,7 @@ function CatFact() {
         {error ? (
           <p className="large">{t(`fact.errors.${error}`)}</p>
         ) : (
-          <p className="display-leftmiddle container large leftbar margin">
+          <p className="display-leftmiddle container xlarge leftbar margin">
             {loading && !data ? t("fact.loading") : data}
           </p>
         )}
@@ -64,7 +64,7 @@ function CatFact() {
       <br />
       <button
         aria-label={t("fact.next")}
-        className="button right light-grey center xlarge block margin-bottom"
+        className="button right light-grey center large block margin-bottom"
         onClick={fetchData}
       >
         {t("fact.next")} <i className="fa fa-chevron-circle-right"></i>
