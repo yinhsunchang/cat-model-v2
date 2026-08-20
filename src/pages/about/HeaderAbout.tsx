@@ -10,7 +10,7 @@ const HeaderAbout = () => {
       style={{ backgroundImage: `url(${sink1})` }}
     >
       <div className="display-middle" style={{ whiteSpace: "nowrap" }}>
-        <span className="center animate-opacity">
+        <span className="center animate-fading">
           <h1 className="jumbo wide">
             <span className="hide-small">{t("header.greeting")}</span>{" "}
             <mark>{t("header.name")}</mark>
