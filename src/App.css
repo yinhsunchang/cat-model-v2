@@ -81,6 +81,15 @@ mark {
   }
 }
 
+@media (max-width: 600px) {
+  .bgimg {
+    background-attachment: scroll;
+    background-size: cover;
+    height: 50dvh;
+    height: 50vh;
+  }
+}
+
 /* For photos */
 .row-padding img {
   margin-bottom: 12px;
