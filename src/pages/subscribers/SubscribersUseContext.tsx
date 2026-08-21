@@ -81,29 +81,33 @@ function Subscribers() {
                 {subscriber.email}
               </div>
 
-              <button
-                className="button large grey padding margin-left round-large right"
-                style={{ maxWidth: "150px" }}
-                onClick={() => handleDelete(subscriber.id)}
-              >
-                <i className="fa fa-trash xlarge"></i>
-                <span className="hide-small hide-medium">
-                  {" "}
-                  {t("subscribers.delete")}
-                </span>
-              </button>
+              <span className="hide-small">
+                <button
+                  className="button large grey padding margin-left round-large right"
+                  style={{ maxWidth: "150px" }}
+                  onClick={() => handleDelete(subscriber.id)}
+                >
+                  <i className="fa fa-trash xlarge"></i>
+                  <span className="hide-small hide-medium">
+                    {" "}
+                    {t("subscribers.delete")}
+                  </span>
+                </button>
+              </span>
 
-              <button
-                className="button large grey padding round-large right"
-                style={{ maxWidth: "125px" }}
-                onClick={() => handleEdit(subscriber.id)}
-              >
-                <i className="fa fa-pencil xlarge"></i>
-                <span className="hide-small hide-medium">
-                  {" "}
-                  {t("subscribers.edit")}
-                </span>
-              </button>
+              <span className="hide-small">
+                <button
+                  className="button large grey padding round-large right"
+                  style={{ maxWidth: "125px" }}
+                  onClick={() => handleEdit(subscriber.id)}
+                >
+                  <i className="fa fa-pencil xlarge"></i>
+                  <span className="hide-small hide-medium">
+                    {" "}
+                    {t("subscribers.edit")}
+                  </span>
+                </button>
+              </span>
             </div>
           ))
         )}

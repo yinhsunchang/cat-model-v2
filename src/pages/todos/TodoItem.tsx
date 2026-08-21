@@ -156,28 +156,35 @@ function TodoItem({ todo, onToggle, onDelete, onEdit }: TodoItemProps) {
           </>
         ) : (
           <>
-            <button
-              type="button"
-              className="button large grey right round-large"
-              onClick={handleDelete}
-              disabled={deleting}
-            >
-              <i className="fa fa-trash xlarge" />
-              <span className="hide-small hide-medium">
-                {" "}
-                {deleting ? t("todos.deleting") : t("todos.delete")}
-              </span>
-            </button>
+            <span className="hide-small">
+              <button
+                type="button"
+                className="button large grey right round-large"
+                onClick={handleDelete}
+                disabled={deleting}
+              >
+                <i className="fa fa-trash xlarge" />
+                <span className="hide-small hide-medium">
+                  {" "}
+                  {deleting ? t("todos.deleting") : t("todos.delete")}
+                </span>
+              </button>
+            </span>
 
-            <button
-              type="button"
-              className="button large grey right margin-right round-large"
-              onClick={handleStartEdit}
-              disabled={deleting}
-            >
-              <i className="fa fa-pencil xlarge" />
-              <span className="hide-small hide-medium"> {t("todos.edit")}</span>
-            </button>
+            <span className="hide-small">
+              <button
+                type="button"
+                className="button large grey right margin-right round-large"
+                onClick={handleStartEdit}
+                disabled={deleting}
+              >
+                <i className="fa fa-pencil xlarge" />
+                <span className="hide-small hide-medium">
+                  {" "}
+                  {t("todos.edit")}
+                </span>
+              </button>
+            </span>
           </>
         )}
       </div>
